@@ -1,5 +1,5 @@
 {% set name = "slovnet" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/slovnet-{{ version }}.tar.gz
-  sha256: 73eeb89f2bfecbbb483c7e27f89b91635b183965c67e1ebaa095551c8ed3eb66
+  sha256: 02d2257bdc9b9cc1d242bd34ee2c861c648f7083ef7898fe1468abcc381ef799
 
 build:
   skip: true  # [win]
-  number: 5
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
